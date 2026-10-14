@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings version="1">
+    <section id="script.kodidoctor">
+        <category id="generale" label="30000">
+            <group id="1">
+                <setting id="avviso_errore" type="boolean" label="30001" help="30002">
+                    <level>0</level>
+                    <default>true</default>
+                    <control type="toggle"/>
+                </setting>
+                <setting id="monitor_log" type="boolean" label="30007" help="30008">
+                    <level>0</level>
+                    <default>true</default>
+                    <control type="toggle"/>
+                </setting>
+                <setting id="monitor_tutti" type="boolean" label="30009" help="30010">
+                    <level>0</level>
+                    <default>true</default>
+                    <control type="toggle"/>
+                </setting>
+                <setting id="mostra_finestra" type="boolean" label="30011" help="30012">
+                    <level>0</level>
+                    <default>true</default>
+                    <control type="toggle"/>
+                </setting>
+                <setting id="domini_extra" type="string" label="30003" help="30004">
+                    <level>0</level>
+                    <constraints>
+                        <allowempty>true</allowempty>
+                    </constraints>
+                    <default></default>
+                    <control type="edit" format="string">
+                        <heading>30003</heading>
+                    </control>
+                </setting>
+            </group>
+        </category>
+        <category id="aggiornamenti" label="30013">
+            <group id="1">
+                <setting id="aggiorna_auto" type="boolean" label="30014" help="30015">
+                    <level>0</level>
+                    <default>true</default>
+                    <control type="toggle"/>
+                </setting>
+                <setting id="repo_github" type="string" label="30016" help="30017">
+                    <level>2</level>
+                    <default>aandroide/Kodidoctor</default>
+                    <control type="edit" format="string">
+                        <heading>30016</heading>
+                    </control>
+                </setting>
+                <setting id="ramo_github" type="string" label="30018" help="30019">
+                    <level>2</level>
+                    <default>master</default>
+                    <control type="edit" format="string">
+                        <heading>30018</heading>
+                    </control>
+                </setting>
+            </group>
+        </category>
+    </section>
+</settings>

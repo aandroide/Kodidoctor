@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.kodidoctor" name="Kodi Doctor" version="0.3.1" provider-name="Androide">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="it_IT">Capisci perché un flusso non parte e cosa fare</summary>
+    <description lang="it_IT">Kodi Doctor controlla la rete, i DNS, l'orologio, le dipendenze e i singoli indirizzi, e spiega in italiano semplice perché una riproduzione non parte, con la correzione da fare. Legge il log di Kodi in diretta e avvisa da solo quando un addon ha un errore, dicendo il motivo.</description>
+    <summary lang="en_GB">Find out why a stream will not play and what to do</summary>
+    <description lang="en_GB">Kodi Doctor checks network, DNS, clock, add-on dependencies and single addresses, and explains in plain language why playback fails, with the fix to apply. It reads the Kodi log live and warns you when an add-on has an error, saying why.</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <news>v0.3.1: repository di aggiornamento aandroide/Kodidoctor, ramo master.
+
+v0.3.0: aggiornamento automatico da GitHub in base all ultimo commit, con notifica della versione e di cosa è cambiato. Nuova voce Aggiornamenti nel menu.
+
+v0.2.11: messaggio Cloudflare generico, senza riferimenti ad app esterne.
+
+v0.2.10: riconosce quando la protezione Cloudflare di un sito non viene superata dall addon.
+
+v0.2.9: menu con un icona diversa e una breve descrizione per ogni voce.
+
+v0.2.8: tolti i riferimenti alla guida di MandraKodi e la voce con il link dalle impostazioni, l addon è universale. Restano le indicazioni su cosa fare.
+
+v0.2.7: Cosa fare per i DNS più completo (Cloudflare e OpenDNS, rete fissa e mobile, verifica con dnsleaktest). Tolti i riferimenti a guide esterne.
+
+v0.2.6: monitor degli addon in background acceso di default, finestra con il pulsante Apri Kodi Doctor che mostra subito il dettaglio del problema.
+
+v0.2.5: ignora i controlli di rete che Kodi fa da solo (per esempio msftconnecttest.com).
+
+v0.2.4: il test DNS controlla anche streamingunity.fun e i siti andati in errore di recente, e scopre i DNS che rispondono con un indirizzo falso.
+
+v0.2.3: errore di certificato, capisce se il colpevole è il DNS che dirotta il sito (prova con l indirizzo vero) oppure il sito stesso.
+
+v0.2.2: riconosce gli addon che scrivono nel log con una sigla (S4Me), verifica Cloudflare anche quando il DNS risolve, corretta l impostazione domini extra.
+
+v0.2.1: quando un sito dà errore, Kodi Doctor lo riprova subito e conferma se è Cloudflare, DNS, sito spento o link passeggero.
+
+v0.2.0: monitor del log in diretta, menu Problemi rilevati, interprete per qualsiasi addon.
+
+v0.1.0: prima versione. Diagnosi completa, test di un indirizzo, controllo dipendenze, interprete degli errori, avviso automatico quando la riproduzione fallisce.</news>
+  </extension>
+</addon>

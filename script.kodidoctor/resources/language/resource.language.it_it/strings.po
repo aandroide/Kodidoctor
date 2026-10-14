@@ -1,0 +1,80 @@
+# Kodi Doctor strings
+msgid ""
+msgstr ""
+"Project-Id-Version: script.kodidoctor\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "#30000"
+msgid "General"
+msgstr "Generale"
+
+msgctxt "#30001"
+msgid "Warn when playback fails"
+msgstr "Avvisa quando la riproduzione fallisce"
+
+msgctxt "#30002"
+msgid "Shows a notification with the likely cause when a stream does not start."
+msgstr "Mostra una notifica con la probabile causa quando un flusso non parte."
+
+msgctxt "#30003"
+msgid "Extra sites to check"
+msgstr "Siti in più da controllare"
+
+msgctxt "#30004"
+msgid "Site names separated by commas, for example example.com, example.org. They are added to the DNS check."
+msgstr "Nomi dei siti separati da virgole, per esempio esempio.it, esempio.com. Vengono aggiunti al controllo dei DNS."
+
+msgctxt "#30007"
+msgid "Watch the log and report add-on errors"
+msgstr "Controlla il log e segnala gli errori degli addon"
+
+msgctxt "#30008"
+msgid "Reads kodi.log live and tells you why an add-on link failed, for MandraKodi, S4Me and others."
+msgstr "Legge kodi.log in diretta e dice perché un link di un addon non va, per MandraKodi, S4Me e gli altri."
+
+msgctxt "#30009"
+msgid "Also watch background add-ons"
+msgstr "Controlla anche gli addon in background"
+
+msgctxt "#30010"
+msgid "Off by default: only video add-ons and playback failures are reported."
+msgstr "Acceso di default: vengono segnalati anche gli addon in background, non solo quelli video."
+
+msgctxt "#30011"
+msgid "Show a window with a button to open Kodi Doctor"
+msgstr "Mostra una finestra con il pulsante per aprire Kodi Doctor"
+
+msgctxt "#30012"
+msgid "Besides the notification, asks whether to open the problem details right away."
+msgstr "Oltre alla notifica, chiede se aprire subito il dettaglio del problema."
+
+msgctxt "#30013"
+msgid "Updates"
+msgstr "Aggiornamenti"
+
+msgctxt "#30014"
+msgid "Update Kodi Doctor automatically"
+msgstr "Aggiorna Kodi Doctor da solo"
+
+msgctxt "#30015"
+msgid "Checks GitHub every six hours and installs new commits. Tells you the version and what changed."
+msgstr "Controlla GitHub ogni sei ore e installa i commit nuovi. Ti avvisa con la versione e cosa è cambiato."
+
+msgctxt "#30016"
+msgid "GitHub repository (owner/name)"
+msgstr "Repository GitHub (proprietario/nome)"
+
+msgctxt "#30017"
+msgid "Where updates come from. Change it only if you use your own copy."
+msgstr "Da dove arrivano gli aggiornamenti. Cambialo solo se usi una copia tua."
+
+msgctxt "#30018"
+msgid "Repository branch"
+msgstr "Ramo del repository"
+
+msgctxt "#30019"
+msgid "Usually main."
+msgstr "Di solito master."

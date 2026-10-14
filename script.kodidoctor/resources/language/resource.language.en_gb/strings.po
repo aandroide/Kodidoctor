@@ -1,0 +1,80 @@
+# Kodi Doctor strings
+msgid ""
+msgstr ""
+"Project-Id-Version: script.kodidoctor\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "#30000"
+msgid "General"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Warn when playback fails"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Shows a notification with the likely cause when a stream does not start."
+msgstr ""
+
+msgctxt "#30003"
+msgid "Extra sites to check"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Site names separated by commas, for example example.com, example.org. They are added to the DNS check."
+msgstr ""
+
+msgctxt "#30007"
+msgid "Watch the log and report add-on errors"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Reads kodi.log live and tells you why an add-on link failed, for MandraKodi, S4Me and others."
+msgstr ""
+
+msgctxt "#30009"
+msgid "Also watch background add-ons"
+msgstr ""
+
+msgctxt "#30010"
+msgid "On by default: background add-ons are reported too, not only video add-ons."
+msgstr ""
+
+msgctxt "#30011"
+msgid "Show a window with a button to open Kodi Doctor"
+msgstr "Show a window with a button to open Kodi Doctor"
+
+msgctxt "#30012"
+msgid "Besides the notification, asks whether to open the problem details right away."
+msgstr "Besides the notification, asks whether to open the problem details right away."
+
+msgctxt "#30013"
+msgid "Updates"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Update Kodi Doctor automatically"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Checks GitHub every six hours and installs new commits. Tells you the version and what changed."
+msgstr ""
+
+msgctxt "#30016"
+msgid "GitHub repository (owner/name)"
+msgstr ""
+
+msgctxt "#30017"
+msgid "Where updates come from. Change it only if you use your own copy."
+msgstr ""
+
+msgctxt "#30018"
+msgid "Repository branch"
+msgstr ""
+
+msgctxt "#30019"
+msgid "Usually master."
+msgstr ""
