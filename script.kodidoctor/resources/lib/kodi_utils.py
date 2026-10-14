@@ -5,6 +5,8 @@ import json
 import re
 
 import xbmc
+import xbmcaddon
+import xbmcgui
 
 # (id, nome, a cosa serve, indispensabile)
 DIPENDENZE = (
@@ -38,6 +40,13 @@ def dns_in_uso():
         if re.match(r"^\d{1,3}(\.\d{1,3}){3}$", valore) and valore != "0.0.0.0":
             risultato.append(valore)
     return risultato
+
+
+def notifica(messaggio, durata=9000, avviso=True):
+    """Notifica con il logo di Kodi Doctor al posto dell'icona standard."""
+    addon = xbmcaddon.Addon()
+    icona = addon.getAddonInfo("icon") or (xbmcgui.NOTIFICATION_WARNING if avviso else xbmcgui.NOTIFICATION_INFO)
+    xbmcgui.Dialog().notification(addon.getAddonInfo("name"), messaggio, icona, durata)
 
 
 def jsonrpc(metodo, parametri=None):

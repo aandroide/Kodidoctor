@@ -97,8 +97,7 @@ class Osservatore:
         xbmc.log("[Kodi Doctor] %s: %s (%s)" % (ev["nome"], ev["titolo"], ev.get("host") or "-"), xbmc.LOGINFO)
         if avvisa:
             _segna_avviso()
-            xbmcgui.Dialog().notification(addon.getAddonInfo("name"), eventi.messaggio_notifica(ev, ev["nome"]),
-                                          xbmcgui.NOTIFICATION_WARNING, 9000)
+            kodi_utils.notifica(eventi.messaggio_notifica(ev, ev["nome"]), 9000)
             if addon.getSettingBool("mostra_finestra"):
                 self._chiedi_se_aprire(addon, ev)
 
@@ -125,7 +124,7 @@ def _analizza_riproduzione():
     else:
         messaggio = "Riproduzione non riuscita. La rete sembra a posto: apri Kodi Doctor per una diagnosi completa."
     xbmc.log("[Kodi Doctor] %s" % messaggio, xbmc.LOGINFO)
-    xbmcgui.Dialog().notification(addon.getAddonInfo("name"), messaggio, xbmcgui.NOTIFICATION_WARNING, 8000)
+    kodi_utils.notifica(messaggio, 8000)
 
 
 class Controllore(xbmc.Player):

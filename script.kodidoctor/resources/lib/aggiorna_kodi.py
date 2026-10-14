@@ -79,7 +79,7 @@ def mostra_se_nuovo():
         pass
     voce = stato["cronologia"][0]
     nome = addon.getAddonInfo("name")
-    xbmcgui.Dialog().notification(nome, report.messaggio_aggiornamento(voce), xbmcgui.NOTIFICATION_INFO, 9000)
+    kodi_utils.notifica(report.messaggio_aggiornamento(voce), 9000, avviso=False)
     try:
         if xbmcgui.Dialog().yesno(nome, "Aggiornato alla versione %s (commit %s).\nVuoi vedere cosa è cambiato?" % (
                 voce["versione_nuova"], voce["corto"]), nolabel="Chiudi", yeslabel="Mostra", autoclose=20000):
