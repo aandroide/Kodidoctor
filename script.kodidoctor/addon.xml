@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.kodidoctor" name="Kodi Doctor" version="0.0.1" provider-name="Androide">
+<addon id="script.kodidoctor" name="Kodi Doctor" version="0.0.2" provider-name="Androide">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -26,6 +26,7 @@ It works with any add-on. It warns you with a notification and a window that ope
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>v0.0.1: prima versione. Legge il log di Kodi in diretta e spiega perché un link non parte (DNS, Cloudflare, certificati, componenti mancanti), con notifica e finestra, elenco dei problemi, diagnosi completa, prova di un indirizzo e aggiornamento automatico da GitHub.</news>
+    <news>v0.0.2: Componenti mancanti ora controlla se l'installazione è riuscita e, se nessun repository offre il componente (come ResolveURL), lo spiega invece di non fare nulla.
+v0.0.1: prima versione. Legge il log di Kodi in diretta e spiega perché un link non parte (DNS, Cloudflare, certificati, componenti mancanti), con notifica e finestra, elenco dei problemi, diagnosi completa, prova di un indirizzo e aggiornamento automatico da GitHub.</news>
   </extension>
 </addon>

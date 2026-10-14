@@ -101,11 +101,27 @@ def componenti_mancanti():
     elenco = "\n".join("%s (%s)" % (nome, cosa) for _, nome, cosa in da_sistemare)
     if not xbmcgui.Dialog().yesno(NOME, "Questi componenti mancano:\n\n%s\n\nVuoi sistemarli adesso?" % elenco):
         return
-    for id_addon, _, cosa in da_sistemare:
+    non_riusciti = []
+    for id_addon, nome, cosa in da_sistemare:
         if cosa == "da attivare":
             kodi_utils.abilita_addon(id_addon)
         else:
             xbmc.executebuiltin("InstallAddon(%s)" % id_addon, True)
+            # Kodi non dice niente se nessun repository installato offre l'addon: controllo io
+            for _ in range(20):
+                if kodi_utils.stato_addon(id_addon) is not None:
+                    break
+                xbmc.sleep(500)
+            if kodi_utils.stato_addon(id_addon) is None:
+                non_riusciti.append(nome)
+    if non_riusciti:
+        xbmcgui.Dialog().ok(NOME, "Non sono riuscito a installare:\n\n%s\n\n"
+                                  "Kodi lo cerca solo nei repository già installati e nessuno lo offre. "
+                                  "Installa prima il repository che contiene questo componente "
+                                  "(da zip o dalla sua fonte), poi riprova da qui."
+                            % "\n".join(non_riusciti))
+    else:
+        xbmcgui.Dialog().ok(NOME, "Componenti sistemati.")
 
 
 def ultimo_report():
