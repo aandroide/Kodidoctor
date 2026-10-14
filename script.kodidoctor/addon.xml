@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.kodidoctor" name="Kodi Doctor" version="0.3.2" provider-name="Androide">
+<addon id="script.kodidoctor" name="Kodi Doctor" version="0.3.3" provider-name="Androide">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -8,29 +8,39 @@
   </extension>
   <extension point="xbmc.service" library="service.py" start="login"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="it_IT">Capisci perché un flusso non parte e cosa fare</summary>
-    <description lang="it_IT">Kodi Doctor controlla la rete, i DNS, l'orologio, le dipendenze e i singoli indirizzi, e spiega in italiano semplice perché una riproduzione non parte, con la correzione da fare. Legge il log di Kodi in diretta e avvisa da solo quando un addon ha un errore, dicendo il motivo.</description>
-    <summary lang="en_GB">Find out why a stream will not play and what to do</summary>
-    <description lang="en_GB">Kodi Doctor checks network, DNS, clock, add-on dependencies and single addresses, and explains in plain language why playback fails, with the fix to apply. It reads the Kodi log live and warns you when an add-on has an error, saying why.</description>
+    <summary lang="it_IT">Scopri perché un link o uno streaming non parte e come rimediare</summary>
+    <description lang="it_IT">Kodi Doctor è il medico di Kodi: legge il log mentre usi gli addon e, quando un link non va, te ne dice il motivo in italiano semplice, con quello che devi fare.
+
+Riconosce DNS bloccati dal provider, protezione Cloudflare, certificati non validi, siti spenti, componenti mancanti e altri errori. Apre il sito per verificare com'è adesso, così la diagnosi è confermata e non solo ipotizzata.
+
+Funziona con qualsiasi addon, non solo con uno. Ti avvisa con una notifica e una finestra che apre subito il dettaglio, tiene l'elenco dei problemi rilevati, controlla rete, DNS, orologio e dipendenze, e prova qualsiasi indirizzo. Si aggiorna da solo da GitHub e ti dice cosa è cambiato.</description>
+    <summary lang="en_GB">Find out why a link or stream will not play and how to fix it</summary>
+    <description lang="en_GB">Kodi Doctor is Kodi's doctor: it reads the log while you use your add-ons and, when a link fails, tells you why in plain Italian, with what to do about it.
+
+It recognises provider DNS blocks, Cloudflare protection, invalid certificates, sites that are down, missing components and other errors. It opens the site to check how it is right now, so the diagnosis is confirmed and not just guessed.
+
+It works with any add-on. It warns you with a notification and a window that opens the details right away, keeps a list of detected problems, checks network, DNS, clock and dependencies, and tests any address. It updates itself from GitHub and tells you what changed.</description>
     <platform>all</platform>
     <license>GPL-3.0-or-later</license>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>v0.3.2: i commit che non cambiano l addon non provocano più notifiche di aggiornamento.
+    <news>v0.3.3: descrizioni e guida migliorate.
+
+v0.3.2: i commit che non cambiano l'addon non provocano più notifiche di aggiornamento.
 
 v0.3.1: repository di aggiornamento aandroide/Kodidoctor, ramo master.
 
-v0.3.0: aggiornamento automatico da GitHub in base all ultimo commit, con notifica della versione e di cosa è cambiato. Nuova voce Aggiornamenti nel menu.
+v0.3.0: aggiornamento automatico da GitHub in base all'ultimo commit, con notifica della versione e di cosa è cambiato. Nuova voce Aggiornamenti nel menu.
 
 v0.2.11: messaggio Cloudflare generico, senza riferimenti ad app esterne.
 
-v0.2.10: riconosce quando la protezione Cloudflare di un sito non viene superata dall addon.
+v0.2.10: riconosce quando la protezione Cloudflare di un sito non viene superata dall'addon.
 
-v0.2.9: menu con un icona diversa e una breve descrizione per ogni voce.
+v0.2.9: menu con un'icona diversa e una breve descrizione per ogni voce.
 
-v0.2.8: tolti i riferimenti alla guida di MandraKodi e la voce con il link dalle impostazioni, l addon è universale. Restano le indicazioni su cosa fare.
+v0.2.8: tolti i riferimenti alla guida di MandraKodi e la voce con il link dalle impostazioni, l'addon è universale. Restano le indicazioni su cosa fare.
 
 v0.2.7: Cosa fare per i DNS più completo (Cloudflare e OpenDNS, rete fissa e mobile, verifica con dnsleaktest). Tolti i riferimenti a guide esterne.
 
