@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.kodidoctor" name="Kodi Doctor" version="0.3.3" provider-name="Androide">
+<addon id="script.kodidoctor" name="Kodi Doctor" version="0.3.4" provider-name="Androide">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -26,7 +26,9 @@ It works with any add-on. It warns you with a notification and a window that ope
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>v0.3.3: descrizioni e guida migliorate.
+    <news>v0.3.4: il primo controllo degli aggiornamenti parte 10 secondi dopo l'avvio di Kodi.
+
+v0.3.3: descrizioni e guida migliorate.
 
 v0.3.2: i commit che non cambiano l'addon non provocano più notifiche di aggiornamento.
 

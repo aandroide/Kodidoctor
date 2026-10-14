@@ -91,7 +91,7 @@ def mostra_se_nuovo():
 
 class Aggiornatore:
     """Nel servizio: controlla GitHub poco dopo l'avvio e poi ogni sei ore."""
-    PRIMO_CONTROLLO = 90
+    PRIMO_CONTROLLO = 10
     INTERVALLO = 6 * 3600
 
     def __init__(self, crea_github=None, orologio=time.time):

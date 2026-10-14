@@ -21,7 +21,7 @@ Il medico di Kodi. Quando un link o uno streaming non parte, Kodi Doctor ti dice
 
 ## Installazione
 
-1. Scarica lo zip dalla cartella [`repo`](repo): [script.kodidoctor-0.3.3.zip](https://github.com/aandroide/Kodidoctor/raw/master/repo/script.kodidoctor-0.3.3.zip)
+1. Scarica lo zip dalla cartella [`repo`](repo): [script.kodidoctor-0.3.4.zip](https://github.com/aandroide/Kodidoctor/raw/master/repo/script.kodidoctor-0.3.4.zip)
 2. In Kodi: Add-on, Installa da file zip, scegli il file.
 3. Finito. Da ora in poi si aggiorna da solo.
 
