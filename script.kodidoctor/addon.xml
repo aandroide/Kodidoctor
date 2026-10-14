@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.kodidoctor" name="Kodi Doctor" version="0.3.1" provider-name="Androide">
+<addon id="script.kodidoctor" name="Kodi Doctor" version="0.3.2" provider-name="Androide">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -18,7 +18,9 @@
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>v0.3.1: repository di aggiornamento aandroide/Kodidoctor, ramo master.
+    <news>v0.3.2: i commit che non cambiano l addon non provocano più notifiche di aggiornamento.
+
+v0.3.1: repository di aggiornamento aandroide/Kodidoctor, ramo master.
 
 v0.3.0: aggiornamento automatico da GitHub in base all ultimo commit, con notifica della versione e di cosa è cambiato. Nuova voce Aggiornamenti nel menu.
 

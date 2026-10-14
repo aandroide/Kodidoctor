@@ -211,6 +211,18 @@ def sincronizza(origine, destinazione):
             os.rmdir(r)
 
 
+def identici(radice, destinazione):
+    """True se i file dell'addon nel pacchetto sono gli stessi di quelli installati."""
+    voluti, presenti = _file_relativi(radice), _file_relativi(destinazione)
+    if voluti != presenti:
+        return False
+    for rel in voluti:
+        with open(os.path.join(radice, rel), "rb") as a, open(os.path.join(destinazione, rel), "rb") as b:
+            if a.read() != b.read():
+                return False
+    return True
+
+
 def applica(radice, destinazione, backup):
     if os.path.isdir(backup):
         shutil.rmtree(backup)
@@ -276,6 +288,10 @@ def aggiorna(gh, cartella_addon, profilo, id_addon, versione_locale, applica_agg
             # prima volta: l'addon installato e gia questa versione, mi segno il punto di partenza
             salva_stato(profilo, dict(stato, sha=ultimo["sha"], corto=ultimo["corto"], versione=nuova))
             return {"esito": "baseline", "commit": ultimo, "versione": nuova}
+        if identici(radice, cartella_addon):
+            # commit che non tocca l'addon (README, zip nel repository, ...): mi segno il punto e basta
+            salva_stato(profilo, dict(stato, sha=ultimo["sha"], corto=ultimo["corto"], versione=nuova))
+            return {"esito": "aggiornato", "commit": ultimo, "versione": nuova}
         if not applica_aggiornamenti:
             return {"esito": "disponibile", "commit": ultimo, "versione_vecchia": versione_locale,
                     "versione_nuova": nuova}

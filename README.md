@@ -6,7 +6,7 @@ Addon Kodi (`script.kodidoctor`) che spiega in italiano perché un flusso non pa
 
 Scarica lo zip dalla cartella `repo` (file `script.kodidoctor-<versione>.zip`) e in Kodi vai su Add-on, Installa da file zip. Dopo la prima installazione l'addon si aggiorna da solo.
 
-Download diretto: https://github.com/aandroide/Kodidoctor/raw/master/repo/script.kodidoctor-0.3.1.zip
+Download diretto: https://github.com/aandroide/Kodidoctor/raw/master/repo/script.kodidoctor-0.3.2.zip
 
 ## Aggiornamento automatico
 
